@@ -27,6 +27,8 @@ static void menu(void) {
     
     if (opt == EXIT) {
         running = false;
+    } else if (opt > 7 || opt < 0) {
+	printf("a opção digitada não existe\n");
     } else if (opt == HELP) {
         help();
     } else if (opt == CLS) {
